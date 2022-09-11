@@ -26,7 +26,7 @@ fn main() {
     }
 }
 
-fn accrue_interest(user: &mut User, interest: f32) {
-    user.balance.0 += user.balance.0 * (interest / 100.0);
+fn accrue_interest(user: &mut User, interest_percentage: f32) {
+    user.balance.0 += user.balance.0 * (interest_percentage / 100.0);
     user.print_user_detail();
 }
